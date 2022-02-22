@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cob's Landing Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="ShopDark.css">
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        var count = 0;
+        const ten = 10;
+        var btn = document.getElementById("btn");
+        var disp = document.getElementById("display");
+  
+        function clicked () {
+            count++;
+            disp.innerHTML = (count * ten);
+        }
+    </script>
+    <div id="wrapper">
+        <header>
+            <h1>Cob's Seafood Emporium <input type="button" onclick="location.href='DarkCheckout.html'" value="Cart" /></h1>
+        </header>
+        <div id="FishContainter">
+            <div id="Fish">
+                <p1>Sole:</p1>
+                <p1>Flaky, delicious, goes well with butter</p1>
+                <img id="image" src="images/soleFish.jpg" alt="Flat Fish">
+                <p2>Cost: 10</p2>
+                <button type="button" id="btn" onclick="alert('Added to Cart')">Buy</button>
+            </div>
+            <div id="Fish">
+                <p1>Sea Bass:</p1>
+                <p1>White Fish with mild flavor</p1>
+                <img id="image" src="images/seaBass.jpg" alt="Flat Fish">
+                <p2>Cost: 20</p2>
+                <button type="button" onclick="alert('Added to Cart')">Buy</button>
+            </div>
+            <div id="Fish">
+                <p1>Red Snapper:</p1>
+                <p1>Lean, moist, firm texture</p1>
+                <img id="image" src="images/RedSnapper.jpg" alt="Flat Fish">
+                <p2>Cost: 30</p2>
+                <button type="button" onclick="alert('Added to Cart')">Buy</button>
+            </div>
+            <div id="Fish">
+                <p1>Atlantic Salmon:</p1>
+                <p1>Pinkish Orange meat, Flaky, medium fat content</p1>
+                <img id="image" src="images/salmon.jpg" alt="Flat Fish">
+                <p2>Cost: 40</p2>
+                <button type="button" onclick="alert('Added to Cart')">Buy</button>
+            </div>
+            <div id="Fish">
+                <p1>Grouper:</p1>
+                <p1>Moist, distinctive yet mild flavor</p1>
+                <img id="image" src="images/Grouper.jpg" alt="Flat Fish">
+                <p2>Cost: 50</p2>
+                <button type="button" onclick="alert('Added to Cart')">Buy</button>
+            </div>
+        </div>
+    </div>
+</body>
